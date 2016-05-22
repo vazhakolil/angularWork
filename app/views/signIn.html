@@ -1,0 +1,161 @@
+<div >
+    <button ng-click='signIn.toggleModal()'>Open Modal Dialog</button>
+  <!--  <login-Modal  show1='modalShown' width='750px' height='90%'>-->
+    <login-Modal  width='100%' height='90%'>
+        <h1 class="text-center"> Registration </h1>
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-xs-6 sitecolor">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <form action="" method="POST" class="form-horzonta" role="form">
+                                        <div class="form-group">
+                                            <label for="firstName" class="col-xs-2"> firstName</label>
+                                            <div class="col-xs-4">
+                                                <input type="text" class="form-control " name="firstName" id="firstName">
+                                            </div>
+                                            <label for="email" class="col-xs-2"> email</label>
+                                            <div class="col-xs-4">
+                                                <input type="email" name="email" id="email" class="form-control" value="" required="required" title="">
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="row  vert-offset-top-4">
+
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label for="middleName" class="col-xs-2"> middleName</label>
+                                        <div class="col-xs-4">
+                                            <input type="text" class="form-control " name="middleName" id="middleName">
+                                        </div>
+                                        <label for="lastName" class="col-xs-2"> last Name</label>
+                                        <div class="col-xs-4">
+                                            <input type="text" class="form-control " name="lastName" id="firstName">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label for="aptNumber" class="col-xs-2 "> aptNumber</label>
+                                            <div class="col-xs-8 ">
+                                                <input type="text" class="form-control " name="aptNumber" id="aptNumber">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label for="street1" class="col-xs-2"> street1</label>
+                                            <div class="col-xs-8">
+                                                <input type="text" class="form-control " name="street1" id="street1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label for="street2" class="col-xs-2"> aptNumber</label>
+                                            <div class="col-xs-8">
+                                                <input type="text" class="form-control " name="street2" id="street2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label for="state" class="col-xs-2"> State</label>
+                                            <div class="col-xs-8">
+                                                <input type="text" class="form-control " name="state" id="state">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label for="aptNumber" class="col-xs-2"> aptNumber</label>
+                                            <div class="col-xs-8">
+                                                <input type="text" class="form-control " name="aptNumber" id="aptNumber">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+
+                            <div class="form-group">
+                                <div class="col-xs-10 col-sm-offset-2">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-1">
+                </div>
+                <div class="col-xs-5">
+                    <div class="row">
+                        <div class="col-xs-12 sitecolor">
+                            <form action="" class="form-horizontal  "method="get" accept-charset="utf8">
+                                <div class="row">
+                                    <label for="email" class="col-xs-2">email</label>
+                                    <div class="col-xs-8">
+                                        <input type="email" ng-model="email" id="input" class="form-control" value="" required="required" title="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <label for="password" class="col-xs-2">password</label>
+                                    <div class="col-xs-8">
+                                        <input type="password" ng-model="password" id="password" class="form-control" required="required" title="">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="checkbox col-xs-10 col-xs-offset3" >
+                                        <label for="rememberme" >
+                                            <input type="checkbox"> Remember Me
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-10 col-sm-offset-2">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+</div>
+    </login-Modal>
+
+
+</div>
+
+
+
+<script type="text/javascript">
+    (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/client.js?onload=onLoadCallback';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+
+
+    function onLoadCallback()
+    {
+        gapi.client.setApiKey('AIzaSyDbsGlPudNTj2IsUO87jFkZTa_Gz20SGPc'); //set your API KEY
+        gapi.client.load('plus', 'v1',function(){});//Load Google + API
+    }
+</script>
