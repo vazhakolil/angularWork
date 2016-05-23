@@ -1,5 +1,6 @@
 /**
  * Created by rajeevan.vazhakolil on 4/24/2016.
+ * This is a test for directives
  */
 var carouselApp= angular.module('carosuelDirectiveModule',['carouselDataServiceModule'])
 
